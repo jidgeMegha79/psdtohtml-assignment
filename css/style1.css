@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+h1{
+    font-size: 2.5em;
+}
+p{
+    font-size: 1em;
+}
+/*container for topbar*/
+.topbar{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+/*univercity logo*/
+.topbar img{
+   width: 25%;
+   height: 50px;
+   margin-left: 20px;
+   
+  
+}
+/*navigation button*/
+.topbar button{
+    float: left;
+    color: red;
+    
+}
+/* topbar hide for mobile */
+.topbar{
+    display: none;
+}
+.right-icon a{
+    padding-left: 10px;
+}
+.drop{
+    width: 100px;
+}
+/* first section */
+.campus{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    border-top: 4px solid red;
+
+}
+/* first section right div */
+.background{
+    width:80%;
+    background-image: url(/images/campus.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    float: right;
+    z-index: 1;
+    
+}
+/* first section left div */
+.text{
+    float: left;
+    color:black;
+    width: 40%;
+    z-index:2; 
+}
+.text img{
+    width: 500px;
+    height: auto;
+    margin-left: 50px;
+}
+  
+   
+.know-more{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 30px;
+    border: 0px;
+    
+}
+ 
+    /* navigation bar for windows */
+.navbar-container{
+ background-color: rgba(0,0,0,0.5);
+ padding: 10px;
+ }
+   
+li{
+display: inline;
+
+}
+li a {
+ color: rgb(0, 0, 0);
+text-align: center;
+padding: 12px 14px;
+text-decoration: none;
+        
+}
+      
+li a:hover {
+background-color:white;
+color: black;
+} #closebtn{
+ color: white;
+ float: right;
+ display: none;
+ background-color: aqua;
+}
+/* second section style */
+.second-page{
+ width: 100%;
+ height: auto;
+ display: flex;
+ flex-direction: row;
+ background-color:rgba(169, 8, 8, 0.7);
+ margin-top:10px;
+ position: absolute;
+ z-index: 1;
+}
+   /* second section left div */
+.academics-left{
+  width: 30%;
+  color:white;
+  text-align: center;
+ }
+ /* second section right div */
+.academics-right{
+    width: 70%;       
+}
+/* child div in second section */
+.academic-detail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    width: 90%;            
+}
+ .academic-detail div{
+     padding: 10px;
+     margin: 10px;
+     border-top: 5px solid red;
+     background-color: white;
+     width: 200px;
+     height: 150px;
+ }
+ .academic-detail h1{
+     color: red;
+     font-size: 1.5em;
+ }
+ .select-drop{
+     display: flex;
+     flex-direction: row;
+     width: 80%;
+     margin: 30px;
+     
+ }
+ .select{
+     width: 50%;
+     padding: 10px;
+     
+ }
+ .select-input{
+     width: 100%;
+     color:black;
+     padding: 20px;
+     font-size: large;
+ }
+ /* responsive design */
+ @media screen and (max-width: 600px) {
+  .right-icon{ 
+  display: flex;
+  justify-content: end;
+  width: 50%;
+  height: auto;
+  float:right;
+  margin-top: 0;
+  }
+  .topbar{
+      display: block;
+    }
+        
+}
+@media screen and (max-width: 600px) {
+.navbar1{
+  display: none;
+  
+} 
+.navbar2{
+    display: none;
+} 
+
+.campus{
+    flex-direction: column-reverse;
+}
+.background{
+      width: 100%;
+}
+.text{
+      width: 100%;
+}
+.text img{
+    display: none;
+}
+.wel-content{
+     margin-top: 0;
+     margin-left: 10px;
+     padding: 10px;
+     
+     
+}
+.academic-detail{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-right: 0;
+    padding: 0
+}
+.academic-detail div{
+    width: 40%;
+    height: auto;
+    
+}
+.second-page{
+    flex-direction: column;
+    
+}
+.academics-left{
+    width: 100%;
+    
+}
+.academics-right{
+    width: 90%;
+   
+}
+.select-drop{
+    flex-direction: column;
+    margin:10px;
+    width:100%;
+}
+.select{
+    width: 100%;
+}
+.second-page{
+    background-size: contain;
+}
+        
+}
+ @media screen and (max-width: 600px) {
+ .navbar2 ul{
+     background-color:rgba(0, 0, 0,0.7);
+     list-style-type: none;
+     margin:0;
+     padding: 0;    
+ }
+ li{
+  display: block;
+  padding: 10px;
+ }
+ .navbar2 a {
+     color:white;
+     text-decoration: none; 
+ }
+ #closebtn{
+     display: block;
+     font-size: 50px;  
+ }
+}
+ 
+ 
+
+  
+  
+

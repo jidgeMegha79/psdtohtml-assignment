@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assignment demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style1.css">
+    <script src="/javascript/navbar.js" ></script>
+  </head>
+  <body>
+    <!-- take a parent container or all page -->
+    <div class="container">
+      <!-- top container for mobile hide for desktop -->
+      <div class="topbar">
+        <button onclick="show()"><i class="material-icons" style="font-size:36px">menu</i></button>
+        <img src="/images/gitam_logo.png" alt="logo" >
+        <div class="right-icon">
+          <select name="global" id="dropdown" class="drop">
+             <option value="global">Global</option>
+          </select>                   
+          <a onclick="openSearch()"><i class="material-icons" style="font-size:36px">search</i></a>
+          <a><i class="material-icons" style="font-size:36px" title="LOGIN">person_outline</i></a>
+          <a><i class="material-icons" style="font-size:36px">more_horiz</i></a>
+        </div>               
+      </div>
+      <!-- top container for desktop -->
+      <div class="campus">
+        <div class="text">
+          <img src="/images/gitam_logo.png" alt="logo" >
+          <div class="wel-content">
+            <h1 style="color:red;font-size: 3em;">Welcome to <br>GITAM</h1>
+            <p style=" font-size: 1.5em;">Take a tour of what's in store for you at one of india's leading universities.
+                Equipped with the best resources that every student needs,our campuses are where ideas come to life.
+            </p>
+            <button class="know-more">&nbsp;&gt;&nbsp;</button><span style="font-size: 20px;">&nbsp;Know More</span>
+          </div>
+        </div>
+        <div class="background">
+          <div class="navbar-container">
+            <div class="navbar1">
+              <ul>
+                <li><a href="#">MY GITAM</a></li>
+                <li><a href="#">G-PARENTS</a></li>
+                <li><a href="#">G-ALUMINI</a></li>
+                <li><a href="#">G-LIBRARY</a></li>
+                <li><a href="#">G-PAY</a></li>
+                <li><a href="#">GUIDE</a></li>
+                <li><a href="#">WEBMAIL</a></li>
+                <li><a href="#">CARRIERS</a></li>
+                <li><a href="#">GUIDE</a></li>
+                <li><a href="#">MEDIA</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <a href="#"><i class="material-icons" style="font-size:36px">search</i></a>
+              </ul>
+            </div>
+            <div class="navbar2" id="humberger-div">
+              <ul>                     
+                <span id="closebtn" onclick="closeNav()" title="Close ">×</span>
+                <li><a href="#">ACADEMICS</a></li>
+                <li><a href="#">ADMISSION AND EVALUATION</a></li>
+                <li><a href="#">RESEARCH</a></li>
+                <li><a href="#">INTERNATIONAL</a></li>
+                <li><a href="#">ABOUNT</a></li>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">APPLY</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>               
+      </div>
+            <!--second-page-->
+      <div>
+      <div class="second-page">
+       <div class="academics-left">
+          <h1 >Academics At GITAM</h1> 
+          <p style="font-size: 1.5em;">
+           We offer wide range of programs that <br>cater to varity
+           of needs in today's<br> society.What's your area of Interest?
+          </p>
+
+        </div>
+        <div class="academics-right">
+          
+          <div class="select-drop">
+            <div class="select">
+              <select name="select" class="select-input" >
+               <option value="">Under Graduate</option>
+              </select>
+            </div>
+            <div class="select" >
+              <select name="select" class="select-input">
+                <option value="">Post Graduate</option>
+              </select>
+            </div>
+          </div>
+          <div class="academic-detail">
+            <div>
+              <h1>B.Tech.</h1>
+              <P>Computer Science & Engineering</P>
+            </div>
+            <div>
+              <h1>B.Tech.</h1>
+              <P>Industrial enginnering</P>
+            </div>
+            <div>
+              <h1>B.Tech.</h1>
+              <P>Computer Science And Engineering</P>
+            </div>
+            <div>
+              <h1>B.Tech.</h1>
+              <P>Electrical And Electronics engineering </P>
+            </div>
+            <div>
+              <h1>B.Tech.</h1>
+              <P>Electronics And Communication Enginnering</P>
+            </div>
+            <div>
+              <h1>B.Tech.</h1>
+              <P>Information Technology</P>
+            </div>
+            <div>
+              <h1>B.Tech.</h1>
+              <P>Mechanical Enginnering</P>
+            </div>
+            <div>
+              <h1>B.Tech.</h1>
+              <P>M.Tech Integrated Dual Degree In Mechanical</P>
+            </div>
+            <div>
+              <h1>B.Tech.</h1>
+              <P>Computer Science and Business System</P>
+            </div>
+            <div>
+              <h1>B.Tech.</h1>
+              <P>Civil Engineering</P>
+            </div>
+          </div>
+         
+        </div>                 
+      </div>
+    </div>
+  </body>
+</html>
